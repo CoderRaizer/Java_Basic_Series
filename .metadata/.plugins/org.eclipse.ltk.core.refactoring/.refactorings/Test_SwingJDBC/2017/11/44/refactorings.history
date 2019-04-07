@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;javaSwing_JDBC2.Myconnect&apos; to &apos;MyConnect&apos;&#x0D;&#x0A;- Original project: &apos;Test_SwingJDBC&apos;&#x0D;&#x0A;- Original element: &apos;javaSwing_JDBC2.Myconnect&apos;&#x0D;&#x0A;- Renamed element: &apos;javaSwing_JDBC2.MyConnect&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Myconnect&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;javaSwing_JDBC2{Myconnect.java[Myconnect" matchStrategy="1" name="MyConnect" qualified="false" references="true" similarDeclarations="false" stamp="1509721090700" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;truutuong1phan_abstract&apos; to &apos;bt_abstract&apos;&#x0D;&#x0A;- Original project: &apos;Inheritance,Interface,Abstraction,Polymorphism&apos;&#x0D;&#x0A;- Original element: &apos;Inheritance,Interface,Abstraction,Polymorphism/src/truutuong1phan_abstract&apos;&#x0D;&#x0A;- Renamed element: &apos;Inheritance,Interface,Abstraction,Polymorphism/src/bt_abstract&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;truutuong1phan_abstract&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;truutuong1phan_abstract" name="bt_abstract" qualified="false" references="true" stamp="1532194088899" textual="false" version="1.0"/>
+</session>

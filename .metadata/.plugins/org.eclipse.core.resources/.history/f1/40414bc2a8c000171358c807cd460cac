@@ -1,0 +1,118 @@
+package javaSwing_JDBC2;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+
+public class JFrame1 extends JFrame
+{
+	
+	private JPanel contentPane;
+	private JTextField txtname;
+	private JTextField txtpass;
+	
+	
+	Connection con;
+	public static void main(String[] args)
+	{
+		EventQueue.invokeLater(new Runnable()
+		{
+			public void run()
+			{
+				try
+				{
+					JFrame1 frame = new JFrame1();
+					frame.setVisible(true);
+				} catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+	
+	/**
+	 * Create the frame.
+	 */
+	
+	
+	
+	public JFrame1()
+	{
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 528, 383);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(0, 0, 512, 343);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblUsername = new JLabel("Username");
+		lblUsername.setBounds(10, 49, 72, 25);
+		panel.add(lblUsername);
+		
+		JLabel lblPassword = new JLabel("Password");
+		lblPassword.setBounds(10, 98, 72, 25);
+		panel.add(lblPassword);
+		
+		txtname = new JTextField();
+		txtname.setBounds(97, 51, 269, 23);
+		panel.add(txtname);
+		txtname.setColumns(10);
+		
+		txtpass = new JTextField();
+		txtpass.setBounds(97, 100, 269, 23);
+		panel.add(txtpass);
+		txtpass.setColumns(10);
+		
+		
+		JButton btnRegister = new JButton("Register");
+		btnRegister.setBounds(97, 184, 108, 33);
+		panel.add(btnRegister);
+		btnRegister.addActionListener(new ActionListener()
+		{	
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				// TODO Auto-generated method stub
+				try
+				{
+					con = new MyConnect().getcn();
+					if(con==null)
+					{
+						JOptionPane.showMessageDialog(getParent(), "Kết nối thất bại","Thông Báo",JOptionPane.ERROR_MESSAGE);
+						return;
+					}
+					
+					//Kiểm tra username có tồn tại trước đó chưa (không được trùng Username)
+					
+					String user = txtname.getText();
+					String sql = "Select * Form admin where username = ?";
+					PreparedStatement ps = con.
+					
+				}
+			}
+		});
+		
+		
+		
+		JButton btnLogin = new JButton("Login");
+		btnLogin.setBounds(238, 184, 108, 33);
+		panel.add(btnLogin);
+	}
+}

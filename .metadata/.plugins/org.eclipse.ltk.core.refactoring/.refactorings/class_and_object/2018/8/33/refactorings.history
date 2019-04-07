@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;class_and_object.annonymous.java&apos; to &apos;Calculation.java&apos;&#x0D;&#x0A;- Original project: &apos;class_and_object&apos;&#x0D;&#x0A;- Original element: &apos;class_and_object.annonymous.java&apos;&#x0D;&#x0A;- Renamed element: &apos;class_and_object.Calculation.java&apos;" description="Rename compilation unit &apos;annonymous.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;class_and_object{annonymous.java" name="Calculation.java" references="false" stamp="1534568106773" version="1.0"/>
+</session>
